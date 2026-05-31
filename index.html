@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle></tittle>
+    <title>Student Marks App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h3>Javascript Marks</h3>
-    <p>Fill Student Marks</p>
+    <p>Fill Students Marks</p>
+    <form>
+    
+        <label for="studentnameInput">Student Name</label><input type="text" id="studentnameInput"><br><br>
 
-    <input type="text" id="marks-input" placeholder="Enter Marks"/>
-    <button id="addMarks">Add Marks</button>
+        <label for="studentmarkInput">Student Mark</label><input type="number" id="studentmarkInput" min="0" max="100"><br><br>   
+
+        <button type="button" onclick="checkMark()">Submit</button>
+
+    </form>
+    <p id="output"></p>
+    <h4>Submitted Students</h4>
+    <ul id="studentList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
